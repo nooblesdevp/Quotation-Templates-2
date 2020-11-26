@@ -1,0 +1,314 @@
+.logo-profile {
+  display: flex;
+  align-items: center;
+}
+
+.logo-profile .logo-profile-text h3 {
+  font-size: 23px;
+}
+
+.logo-profile .logo-profile-img {
+  width: 70px;
+  margin-right: 20px;
+}
+
+.quotation-date-wrapper .quotation-date-text {
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+
+.quotation-address {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quotation-address .quotation-company-profile {
+  margin-top: 100px;
+}
+
+.quotation-address .quotation-user-profile {
+  text-align: right;
+  margin-top: 90px;
+}
+
+.quotation-table-content {
+  width: 100%;
+}
+
+.quotation-table-content .qty,
+.quotation-table-content .part,
+.quotation-table-content .desc,
+.quotation-table-content .unit,
+.quotation-table-content .amount {
+  width: fit-content;
+}
+
+.quotation-table-content .unit,
+.quotation-table-content .amount {
+  text-align: center;
+  width: 190px;
+}
+
+.quotation-table-content tr,
+.quotation-table-content th,
+.quotation-table-content td {
+  border-collapse: collapse;
+  font-size: 16px;
+  padding: 8px;
+}
+
+.quotation-table-content th {
+  background: #89c4fb;
+}
+
+.quotation-table-content tr {
+  background: #dddddd59;
+}
+
+.quotation-table-content tr:nth-child(even) {
+  background: white;
+}
+
+.quotation-table-content .qty input {
+  margin-right: 8px;
+}
+
+.group-product {
+  margin-top: 50px;
+  position: relative;
+}
+
+.group-product .discont {
+  text-align: right;
+}
+
+.group-product .empty {
+  background: white;
+}
+
+.group-product .group-total {
+  text-align: left;
+}
+
+.approval-and-payment-title {
+  border-left: 4px solid #89c4fb;
+  padding-left: 10px;
+}
+
+.approval-and-payment-input {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.approval-and-payment-input div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.approval-and-payment-input div label {
+  margin-bottom: 10px;
+}
+
+.approval-and-payment-input div input {
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #dddddd59;
+  outline: none;
+  background: #dddddd59;
+}
+
+.approval-and-payment-input .approval-and-payment-input-content {
+  margin-right: 40px;
+}
+
+.approval-and-payment-input-signIn {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 20px;
+}
+
+.approval-and-payment-input-signIn span {
+  margin-bottom: 10px;
+}
+
+.approval-and-payment-input-signIn .approval-payment-input-signIn-button {
+  margin-top: 10px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.approval-and-payment-input-signIn .approval-payment-input-signIn-button button {
+  flex: 1;
+  font-size: 16px;
+  padding: 12px;
+  background: #dddddd59;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s all;
+  outline: none;
+}
+
+.approval-and-payment-input-signIn .approval-payment-input-signIn-button button:hover {
+  background: #372ae4;
+  color: white;
+}
+
+.approval-and-payment-input-signIn .approval-payment-input-signIn-button .active {
+  background: #4c41e7;
+  color: white;
+  margin-right: 20px;
+}
+
+.payment-details-content {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.payment-details-content .payment-details-content-title-wrapper {
+  display: flex;
+}
+
+.payment-details-content .payment-details-content-title-wrapper .payment-details-title-content {
+  margin-right: 30px;
+  padding-bottom: 8px;
+}
+
+.payment-details-content .payment-details-content-title-wrapper .payment-details-title-content p {
+  font-size: 15px;
+}
+
+.payment-details-content .payment-details-content-title-wrapper .active {
+  border-bottom: 4px solid #89c4fb;
+}
+
+.payment-details-content .payment-details-input-wrapper {
+  margin-top: 20px;
+  display: flex;
+}
+
+.payment-details-content .payment-details-input-wrapper .payment-details-input-left,
+.payment-details-content .payment-details-input-wrapper .paymnent-details-input-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: white;
+}
+
+.payment-details-content .payment-details-input-wrapper .payment-details-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.payment-details-content .payment-details-input-wrapper .payment-details-input input {
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #dddddd59;
+  outline: none;
+  background: #dddddd59;
+}
+
+.payment-details-content .payment-details-input-wrapper .payment-details-input label {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.payment-details-content .payment-details-input-wrapper .payment-details-input label span {
+  color: #e41d1d;
+}
+
+.payment-details-content .payment-details-input-left {
+  margin-right: 30px;
+}
+
+.payment-details-content .payment-details-input-card-date-wrapper {
+  display: flex;
+}
+
+.payment-details-content .payment-details-input-card-date-wrapper .card-details {
+  margin-right: 20px;
+  flex: 1;
+}
+
+.payment-details {
+  border: 1px solid #4c41e7;
+  padding: 16px;
+}
+
+.payment-details button {
+  font-size: 16px;
+  padding: 12px 20px;
+  background: #4c41e7;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s all;
+  outline: none;
+  color: white;
+  margin-left: 10px;
+}
+
+.payment-details button:hover {
+  background: #372ae4;
+  color: white;
+}
+
+.question-and-answers .approval-and-payment-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.question-and-answers .question-and-answers-content {
+  background: #dddddd59;
+  margin-bottom: 16px;
+  padding: 20px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.question-and-answers .question-and-answers-content .question-and-answers-content-marker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px;
+  background: #8b8989;
+  color: white;
+  border-radius: 4px;
+}
+
+.question-and-answers .question-and-answers-content .question-and-answers-content-name {
+  margin-top: 20px;
+  display: flex;
+}
+
+.question-and-answers .question-and-answers-content .question-and-answers-content-name p {
+  color: #4c41e7;
+  margin-right: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  width: 80%;
+  margin: 20px auto;
+  position: relative;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif, sans-serif;
+}
+/*# sourceMappingURL=main.css.map */

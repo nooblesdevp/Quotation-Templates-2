@@ -1,0 +1,118 @@
+@media screen and(max-width:768px) {
+  .quotation-table-content {
+    .unit,
+    .amount {
+      width: 95px !important;
+    }
+  }
+  //payment details
+  .payment-details button {
+    font-size: 13px !important;
+  }
+  .paymnent-details-input-right {
+    input[type="text"] {
+      width: 296px !important;
+    }
+    input[type="datetime "],
+    input[type="number"] {
+      width: 130px !important;
+    }
+  }
+
+  //approval and payments
+  .approval-and-payment-input-content {
+    margin-right: 20px !important;
+  }
+  .approval-and-payment-input {
+    input {
+      width: 190px;
+    }
+  }
+}
+// media 425px
+@media screen and(max-width: 425px) {
+  .container {
+    width: 90% !important;
+  }
+  p {
+    font-size: 13px !important;
+  }
+  //logo company
+  .logo-profile {
+    img {
+      width: 50px !important;
+    }
+    h3 {
+      font-size: 16px !important;
+    }
+  }
+  .quotation-date-text {
+    .quotation-date-text {
+      top: -10px !important;
+    }
+  }
+  //company-profile
+  .quotation-company-profile,
+  .quotation-user-profile {
+    margin-top: 60px !important;
+  }
+  //table content
+  .group-product {
+    margin-top: 20px !important;
+  }
+  .quotation-table-content {
+    th {
+      font-size: 13px !important;
+    }
+    td {
+      font-size: 13px !important;
+      padding: 4px !important;
+    }
+
+    .qty {
+      display: flex;
+      align-items: center;
+      padding-top: 8px !important;
+    }
+    .unit,
+    .amount {
+      width: 65px !important;
+    }
+  }
+  //approval and payment
+  .approval-and-payment-title h3 {
+    font-size: 16px !important;
+  }
+  .payment-details-title h3 {
+    font-size: 16px !important;
+  }
+  .approval-and-payment-input {
+    flex-direction: column;
+    input {
+      width: 100%;
+    }
+    .approval-and-payment-input-content {
+      margin-right: 0px !important;
+    }
+  }
+  .approval-and-payment-input-signIn {
+    width: initial !important;
+    .approval-payment-input-signIn-button button {
+      font-size: 13px !important;
+      padding: 13px !important;
+    }
+  }
+  //payment details
+  .payment-details-input-wrapper {
+    flex-direction: column;
+    .payment-details-input-left {
+      margin-right: 0 !important;
+    }
+    label {
+      font-size: 13px !important;
+    }
+  }
+  .payment-details-input > .card-details {
+    margin-right: 10px !important;
+  }
+}

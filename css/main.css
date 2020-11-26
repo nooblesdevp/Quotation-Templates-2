@@ -1,3 +1,101 @@
+@media screen and (max-width: 768px) {
+  .quotation-table-content .unit,
+  .quotation-table-content .amount {
+    width: 95px !important;
+  }
+  .payment-details button {
+    font-size: 13px !important;
+  }
+  .paymnent-details-input-right input[type="text"] {
+    width: 296px !important;
+  }
+  .paymnent-details-input-right input[type="datetime "],
+  .paymnent-details-input-right input[type="number"] {
+    width: 130px !important;
+  }
+  .approval-and-payment-input-content {
+    margin-right: 20px !important;
+  }
+  .approval-and-payment-input input {
+    width: 190px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    width: 90% !important;
+  }
+  p {
+    font-size: 13px !important;
+  }
+  .logo-profile img {
+    width: 50px !important;
+  }
+  .logo-profile h3 {
+    font-size: 16px !important;
+  }
+  .quotation-date-text .quotation-date-text {
+    top: -10px !important;
+  }
+  .quotation-company-profile,
+  .quotation-user-profile {
+    margin-top: 60px !important;
+  }
+  .group-product {
+    margin-top: 20px !important;
+  }
+  .quotation-table-content th {
+    font-size: 13px !important;
+  }
+  .quotation-table-content td {
+    font-size: 13px !important;
+    padding: 4px !important;
+  }
+  .quotation-table-content .qty {
+    display: flex;
+    align-items: center;
+    padding-top: 8px !important;
+  }
+  .quotation-table-content .unit,
+  .quotation-table-content .amount {
+    width: 65px !important;
+  }
+  .approval-and-payment-title h3 {
+    font-size: 16px !important;
+  }
+  .payment-details-title h3 {
+    font-size: 16px !important;
+  }
+  .approval-and-payment-input {
+    flex-direction: column;
+  }
+  .approval-and-payment-input input {
+    width: 100%;
+  }
+  .approval-and-payment-input .approval-and-payment-input-content {
+    margin-right: 0px !important;
+  }
+  .approval-and-payment-input-signIn {
+    width: initial !important;
+  }
+  .approval-and-payment-input-signIn .approval-payment-input-signIn-button button {
+    font-size: 13px !important;
+    padding: 13px !important;
+  }
+  .payment-details-input-wrapper {
+    flex-direction: column;
+  }
+  .payment-details-input-wrapper .payment-details-input-left {
+    margin-right: 0 !important;
+  }
+  .payment-details-input-wrapper label {
+    font-size: 13px !important;
+  }
+  .payment-details-input > .card-details {
+    margin-right: 10px !important;
+  }
+}
+
 .logo-profile {
   display: flex;
   align-items: center;
@@ -165,48 +263,50 @@
   margin-right: 20px;
 }
 
-.payment-details-content {
+.payment-details .payment-details-content {
   margin-top: 20px;
-  padding: 10px;
+  border: 1px solid #4c41e7;
+  border-radius: 8px;
+  padding: 20px;
 }
 
-.payment-details-content .payment-details-content-title-wrapper {
+.payment-details .payment-details-content .payment-details-content-title-wrapper {
   display: flex;
 }
 
-.payment-details-content .payment-details-content-title-wrapper .payment-details-title-content {
+.payment-details .payment-details-content .payment-details-content-title-wrapper .payment-details-title-content {
   margin-right: 30px;
   padding-bottom: 8px;
 }
 
-.payment-details-content .payment-details-content-title-wrapper .payment-details-title-content p {
+.payment-details .payment-details-content .payment-details-content-title-wrapper .payment-details-title-content p {
   font-size: 15px;
 }
 
-.payment-details-content .payment-details-content-title-wrapper .active {
+.payment-details .payment-details-content .payment-details-content-title-wrapper .active {
   border-bottom: 4px solid #89c4fb;
 }
 
-.payment-details-content .payment-details-input-wrapper {
+.payment-details .payment-details-content .payment-details-input-wrapper {
   margin-top: 20px;
   display: flex;
 }
 
-.payment-details-content .payment-details-input-wrapper .payment-details-input-left,
-.payment-details-content .payment-details-input-wrapper .paymnent-details-input-right {
+.payment-details .payment-details-content .payment-details-input-wrapper .payment-details-input-left,
+.payment-details .payment-details-content .payment-details-input-wrapper .paymnent-details-input-right {
   display: flex;
   flex-direction: column;
   flex: 1;
   background: white;
 }
 
-.payment-details-content .payment-details-input-wrapper .payment-details-input {
+.payment-details .payment-details-content .payment-details-input-wrapper .payment-details-input {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
 }
 
-.payment-details-content .payment-details-input-wrapper .payment-details-input input {
+.payment-details .payment-details-content .payment-details-input-wrapper .payment-details-input input {
   font-size: 18px;
   padding: 8px;
   border-radius: 4px;
@@ -215,31 +315,26 @@
   background: #dddddd59;
 }
 
-.payment-details-content .payment-details-input-wrapper .payment-details-input label {
+.payment-details .payment-details-content .payment-details-input-wrapper .payment-details-input label {
   margin-bottom: 10px;
   font-size: 15px;
 }
 
-.payment-details-content .payment-details-input-wrapper .payment-details-input label span {
+.payment-details .payment-details-content .payment-details-input-wrapper .payment-details-input label span {
   color: #e41d1d;
 }
 
-.payment-details-content .payment-details-input-left {
+.payment-details .payment-details-content .payment-details-input-left {
   margin-right: 30px;
 }
 
-.payment-details-content .payment-details-input-card-date-wrapper {
+.payment-details .payment-details-content .payment-details-input-card-date-wrapper {
   display: flex;
 }
 
-.payment-details-content .payment-details-input-card-date-wrapper .card-details {
+.payment-details .payment-details-content .payment-details-input-card-date-wrapper .card-details {
   margin-right: 20px;
   flex: 1;
-}
-
-.payment-details {
-  border: 1px solid #4c41e7;
-  padding: 16px;
 }
 
 .payment-details button {
@@ -252,7 +347,7 @@
   transition: 0.3s all;
   outline: none;
   color: white;
-  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .payment-details button:hover {

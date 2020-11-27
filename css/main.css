@@ -1,15 +1,21 @@
 @media screen and (max-width: 768px) {
   .quotation-table-content .unit,
   .quotation-table-content .amount {
-    width: 95px !important;
+    width: 105px !important;
   }
   .payment-details button {
     font-size: 13px !important;
   }
-  .paymnent-details-input-right input[type="text"] {
-    width: 296px !important;
+  .payment-details-input-left {
+    margin-right: 10px !important;
   }
-  .paymnent-details-input-right input[type="datetime "],
+  .paymnent-details-input-right {
+    margin-left: 10px !important;
+  }
+  .paymnent-details-input-right input[type="text"] {
+    width: 100% !important;
+  }
+  .paymnent-details-input-right input[type="datetime"],
   .paymnent-details-input-right input[type="number"] {
     width: 130px !important;
   }
@@ -18,6 +24,13 @@
   }
   .approval-and-payment-input input {
     width: 190px;
+  }
+  .approval-and-payment-input-signIn {
+    width: 50% !important;
+  }
+  .approval-and-payment-input-signIn .approval-payment-input-signIn-button button {
+    font-size: 14px !important;
+    padding: 4px !important;
   }
 }
 
@@ -74,6 +87,10 @@
   }
   .approval-and-payment-input .approval-and-payment-input-content {
     margin-right: 0px !important;
+    margin-bottom: 15px;
+  }
+  .approval-and-payment-input .approval-and-payment-input-content input {
+    font-size: 13px !important;
   }
   .approval-and-payment-input-signIn {
     width: initial !important;
@@ -88,11 +105,15 @@
   .payment-details-input-wrapper .payment-details-input-left {
     margin-right: 0 !important;
   }
-  .payment-details-input-wrapper label {
+  .payment-details-input-wrapper label,
+  .payment-details-input-wrapper input {
     font-size: 13px !important;
   }
-  .payment-details-input > .card-details {
-    margin-right: 10px !important;
+  .payment-details-input-wrapper input[type="text"] {
+    width: 100% !important;
+  }
+  .payment-details-input-wrapper input[type="datetime"] {
+    width: 100% !important;
   }
 }
 
@@ -284,7 +305,9 @@
 }
 
 .payment-details .payment-details-content .payment-details-content-title-wrapper .active {
-  border-bottom: 4px solid #89c4fb;
+  border-bottom: 4px solid #4c41e7;
+  color: #4c41e7;
+  font-weight: bold;
 }
 
 .payment-details .payment-details-content .payment-details-input-wrapper {
@@ -297,7 +320,6 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  background: white;
 }
 
 .payment-details .payment-details-content .payment-details-input-wrapper .payment-details-input {
@@ -313,6 +335,7 @@
   border: 1px solid #dddddd59;
   outline: none;
   background: #dddddd59;
+  text-transform: uppercase;
 }
 
 .payment-details .payment-details-content .payment-details-input-wrapper .payment-details-input label {

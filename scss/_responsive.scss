@@ -2,18 +2,22 @@
   .quotation-table-content {
     .unit,
     .amount {
-      width: 95px !important;
+      width: 105px !important;
     }
   }
   //payment details
   .payment-details button {
     font-size: 13px !important;
   }
+  .payment-details-input-left {
+    margin-right: 10px !important;
+  }
   .paymnent-details-input-right {
+    margin-left: 10px !important;
     input[type="text"] {
-      width: 296px !important;
+      width: 100% !important;
     }
-    input[type="datetime "],
+    input[type="datetime"],
     input[type="number"] {
       width: 130px !important;
     }
@@ -26,6 +30,13 @@
   .approval-and-payment-input {
     input {
       width: 190px;
+    }
+  }
+  .approval-and-payment-input-signIn {
+    width: 50% !important;
+    .approval-payment-input-signIn-button button {
+      font-size: 14px !important;
+      padding: 4px !important;
     }
   }
 }
@@ -93,6 +104,10 @@
     }
     .approval-and-payment-input-content {
       margin-right: 0px !important;
+      margin-bottom: 15px;
+      input {
+        font-size: 13px !important;
+      }
     }
   }
   .approval-and-payment-input-signIn {
@@ -108,11 +123,15 @@
     .payment-details-input-left {
       margin-right: 0 !important;
     }
-    label {
+    label,
+    input {
       font-size: 13px !important;
     }
-  }
-  .payment-details-input > .card-details {
-    margin-right: 10px !important;
+    input[type="text"] {
+      width: 100% !important ;
+    }
+    input[type="datetime"] {
+      width: 100% !important ;
+    }
   }
 }

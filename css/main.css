@@ -1,7 +1,26 @@
+@media screen and (max-width: 1024px) {
+  .approval-payment-input-signIn-button button {
+    padding: 8px !important;
+  }
+  .paymnent-details-input-right input[type="text"] {
+    width: 100% !important;
+  }
+  .paymnent-details-input-right input[type="datetime"],
+  .paymnent-details-input-right input[type="number"] {
+    width: 180px !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .quotation-table-content .unit,
   .quotation-table-content .amount {
     width: 105px !important;
+  }
+  .amount-price .group-product-row-subtotal .group-total {
+    width: 100px !important;
+  }
+  .amount-price .discount {
+    width: 150px !important;
   }
   .payment-details button {
     font-size: 13px !important;
@@ -20,7 +39,7 @@
     width: 130px !important;
   }
   .approval-and-payment-input-content {
-    margin-right: 20px !important;
+    margin-right: 20px;
   }
   .approval-and-payment-input input {
     width: 190px;
@@ -69,9 +88,16 @@
     align-items: center;
     padding-top: 8px !important;
   }
+  .quotation-table-content .qty input[type="checkbox"] {
+    margin-left: 6px;
+  }
   .quotation-table-content .unit,
   .quotation-table-content .amount {
     width: 65px !important;
+  }
+  .amount-price .discount,
+  .amount-price .group-total {
+    width: 100px !important;
   }
   .approval-and-payment-title h3 {
     font-size: 16px !important;
@@ -97,7 +123,10 @@
   }
   .approval-and-payment-input-signIn .approval-payment-input-signIn-button button {
     font-size: 13px !important;
-    padding: 13px !important;
+    height: 40px;
+  }
+  .approval-and-payment-input-signIn .approval-payment-input-signIn-button .active {
+    margin-right: 9px !important;
   }
   .payment-details-input-wrapper {
     flex-direction: column;
@@ -114,6 +143,40 @@
   }
   .payment-details-input-wrapper input[type="datetime"] {
     width: 100% !important;
+  }
+  .payment-details-content-title-wrapper .active {
+    border-bottom: 3px solid !important;
+  }
+  .paymnent-details-input-right {
+    margin-left: 0px !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .quotation-table {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .amount-price {
+    margin-left: 101px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .amount-price {
+    margin-left: 149px;
+  }
+  .approval-payment-input-signIn-button button,
+  .approval-payment-input-signIn-button .active {
+    text-align: center;
+    padding: 0px !important;
+    font-size: 4px !important;
+  }
+  .payment-details-content {
+    padding: 10px !important;
+  }
+  .payment-details-title-content {
+    margin-right: 23px !important;
   }
 }
 
@@ -153,14 +216,19 @@
 
 .quotation-table-content {
   width: 100%;
+  overflow-x: auto;
 }
 
-.quotation-table-content .qty,
 .quotation-table-content .part,
 .quotation-table-content .desc,
 .quotation-table-content .unit,
 .quotation-table-content .amount {
   width: fit-content;
+}
+
+.quotation-table-content .qty {
+  width: 50px;
+  text-align: center;
 }
 
 .quotation-table-content .unit,
@@ -198,16 +266,41 @@
   position: relative;
 }
 
-.group-product .discont {
-  text-align: right;
-}
-
 .group-product .empty {
   background: white;
 }
 
 .group-product .group-total {
   text-align: left;
+}
+
+.amount-price .empty {
+  background: white;
+}
+
+.amount-price .discount {
+  width: 210px;
+  text-align: center;
+}
+
+.amount-price .amount-total-text {
+  border-left: 2px dashed #dddddd59;
+  border-top: 2px dashed #dddddd59;
+  border-bottom: 2px dashed #dddddd59;
+}
+
+.amount-price .amount-total {
+  border-right: 2px dashed #dddddd59;
+  border-top: 2px dashed #dddddd59;
+  border-bottom: 2px dashed #dddddd59;
+}
+
+.amount-price tr {
+  background: white;
+}
+
+.amount-price tr:nth-child(even) {
+  background: #dddddd59;
 }
 
 .approval-and-payment-title {
@@ -227,6 +320,10 @@
   flex: 1;
 }
 
+.approval-and-payment-input div:not(:last-child) {
+  margin-right: 20px;
+}
+
 .approval-and-payment-input div label {
   margin-bottom: 10px;
 }
@@ -238,10 +335,6 @@
   border: 1px solid #dddddd59;
   outline: none;
   background: #dddddd59;
-}
-
-.approval-and-payment-input .approval-and-payment-input-content {
-  margin-right: 40px;
 }
 
 .approval-and-payment-input-signIn {
@@ -289,6 +382,7 @@
   border: 1px solid #4c41e7;
   border-radius: 8px;
   padding: 20px;
+  overflow: hidden;
 }
 
 .payment-details .payment-details-content .payment-details-content-title-wrapper {
@@ -406,11 +500,17 @@
 .question-and-answers .question-and-answers-content .question-and-answers-content-name {
   margin-top: 20px;
   display: flex;
+  align-items: center;
 }
 
 .question-and-answers .question-and-answers-content .question-and-answers-content-name p {
   color: #4c41e7;
   margin-right: 10px;
+}
+
+.question-and-answers .question-and-answers-content .question-and-answers-content-name span {
+  color: #8b8989;
+  font-size: small;
 }
 
 * {

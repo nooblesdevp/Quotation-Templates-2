@@ -1,3 +1,22 @@
+//laptop 1024px
+@media screen and (max-width: 1024px) {
+  .approval-payment-input-signIn-button button {
+    padding: 8px !important;
+  }
+  .payment-details-input-left {
+  }
+  .paymnent-details-input-right {
+    //margin-left: 10px !important;
+    input[type="text"] {
+      width: 100% !important;
+    }
+    input[type="datetime"],
+    input[type="number"] {
+      width: 180px !important;
+    }
+  }
+}
+//media 768px
 @media screen and(max-width:768px) {
   .quotation-table-content {
     .unit,
@@ -5,6 +24,18 @@
       width: 105px !important;
     }
   }
+  //table .group-product
+  .amount-price {
+    .group-product-row-subtotal {
+      .group-total {
+        width: 100px !important;
+      }
+    }
+    .discount {
+      width: 150px !important;
+    }
+  }
+
   //payment details
   .payment-details button {
     font-size: 13px !important;
@@ -25,7 +56,7 @@
 
   //approval and payments
   .approval-and-payment-input-content {
-    margin-right: 20px !important;
+    margin-right: 20px;
   }
   .approval-and-payment-input {
     input {
@@ -71,6 +102,7 @@
   .group-product {
     margin-top: 20px !important;
   }
+
   .quotation-table-content {
     th {
       font-size: 13px !important;
@@ -85,9 +117,21 @@
       align-items: center;
       padding-top: 8px !important;
     }
+    .qty input[type="checkbox"] {
+      margin-left: 6px;
+    }
     .unit,
     .amount {
       width: 65px !important;
+    }
+  }
+  .amount-price {
+    .discount,
+    .group-total {
+      width: 100px !important;
+    }
+
+    .amount-discount {
     }
   }
   //approval and payment
@@ -112,9 +156,14 @@
   }
   .approval-and-payment-input-signIn {
     width: initial !important;
-    .approval-payment-input-signIn-button button {
-      font-size: 13px !important;
-      padding: 13px !important;
+    .approval-payment-input-signIn-button {
+      button {
+        font-size: 13px !important;
+        height: 40px;
+      }
+      .active {
+        margin-right: 9px !important;
+      }
     }
   }
   //payment details
@@ -133,5 +182,45 @@
     input[type="datetime"] {
       width: 100% !important ;
     }
+  }
+  .payment-details-content-title-wrapper {
+    .active {
+      border-bottom: 3px solid !important;
+    }
+  }
+  .paymnent-details-input-right {
+    margin-left: 0px !important;
+  }
+}
+//media 375px
+@media screen and (max-width: 375px) {
+  .quotation-table {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .amount-price {
+    margin-left: 101px;
+  }
+}
+//media 320px
+@media screen and (max-width: 320px) {
+  .amount-price {
+    margin-left: 149px;
+  }
+  .approval-payment-input-signIn-button {
+    button,
+    .active {
+      // height: 40px;
+      text-align: center;
+      padding: 0px !important;
+      font-size: 4px !important;
+    }
+  }
+  .payment-details-content {
+    padding: 10px !important;
+  }
+
+  .payment-details-title-content {
+    margin-right: 23px !important;
   }
 }

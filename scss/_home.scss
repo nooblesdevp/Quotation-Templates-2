@@ -34,8 +34,8 @@
 }
 .quotation-table-content {
   width: 100%;
-  overflow-x: auto;
 
+  position: relative;
   .part,
   .desc,
   .unit,
@@ -43,8 +43,14 @@
     width: fit-content;
   }
   .qty {
-    width: 50px;
+    width: fit-content;
     text-align: center;
+    display: flex;
+    align-items: center;
+    input[type="checkbox"] {
+      outline: none;
+      border: none;
+    }
   }
 
   .unit,

@@ -102,7 +102,10 @@
   .group-product {
     margin-top: 20px !important;
   }
-
+  .quotation-table {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
   .quotation-table-content {
     th {
       font-size: 13px !important;
@@ -110,13 +113,14 @@
 
     td {
       font-size: 13px !important;
-      padding: 4px !important;
+      padding: 6px !important;
     }
 
     .qty {
       display: flex;
       align-items: center;
       text-align: center;
+
       input[type="checkbox"] {
         margin-left: 6px;
         // margin-top: 3px;
@@ -125,16 +129,13 @@
 
     .unit,
     .amount {
-      width: 55px !important;
+      width: 65px !important;
     }
   }
   .amount-price {
     .discount,
     .group-total {
       width: 94px !important;
-    }
-
-    .amount-discount {
     }
   }
   //approval and payment
@@ -201,18 +202,23 @@
     overflow-x: auto;
     white-space: nowrap;
   }
-  .amount-price {
-    margin-left: 101px;
-  }
 }
 //media 320px
 @media screen and (max-width: 320px) {
-  td {
-    padding: 8px !important;
+  .quotation-table {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .quotation-table-content td {
+    padding: 6px !important;
   }
   .amount-price {
-    margin-left: 149px;
+    margin-left: 50px;
   }
+  .amount {
+    width: 65px !important;
+  }
+
   .approval-payment-input-signIn-button {
     button,
     .active {

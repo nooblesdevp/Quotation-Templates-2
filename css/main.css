@@ -76,12 +76,16 @@
   .group-product {
     margin-top: 20px !important;
   }
+  .quotation-table {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
   .quotation-table-content th {
     font-size: 13px !important;
   }
   .quotation-table-content td {
     font-size: 13px !important;
-    padding: 4px !important;
+    padding: 6px !important;
   }
   .quotation-table-content .qty {
     display: flex;
@@ -93,7 +97,7 @@
   }
   .quotation-table-content .unit,
   .quotation-table-content .amount {
-    width: 55px !important;
+    width: 65px !important;
   }
   .amount-price .discount,
   .amount-price .group-total {
@@ -157,17 +161,21 @@
     overflow-x: auto;
     white-space: nowrap;
   }
-  .amount-price {
-    margin-left: 101px;
-  }
 }
 
 @media screen and (max-width: 320px) {
-  td {
-    padding: 8px !important;
+  .quotation-table {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .quotation-table-content td {
+    padding: 6px !important;
   }
   .amount-price {
-    margin-left: 149px;
+    margin-left: 50px;
+  }
+  .amount {
+    width: 65px !important;
   }
   .approval-payment-input-signIn-button button,
   .approval-payment-input-signIn-button .active {
@@ -219,7 +227,7 @@
 
 .quotation-table-content {
   width: 100%;
-  overflow-x: auto;
+  position: relative;
 }
 
 .quotation-table-content .part,
@@ -230,8 +238,15 @@
 }
 
 .quotation-table-content .qty {
-  width: 50px;
+  width: fit-content;
   text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.quotation-table-content .qty input[type="checkbox"] {
+  outline: none;
+  border: none;
 }
 
 .quotation-table-content .unit,

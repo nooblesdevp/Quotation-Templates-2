@@ -34,12 +34,17 @@
 }
 .quotation-table-content {
   width: 100%;
-  .qty,
+  overflow-x: auto;
+
   .part,
   .desc,
   .unit,
   .amount {
     width: fit-content;
+  }
+  .qty {
+    width: 50px;
+    text-align: center;
   }
 
   .unit,
@@ -73,9 +78,7 @@
 .group-product {
   margin-top: 50px;
   position: relative;
-  .discont {
-    text-align: right;
-  }
+
   .empty {
     background: $clr-primary-3;
   }
@@ -83,6 +86,35 @@
     text-align: left;
   }
 }
+//table group product amount total
+.amount-price {
+  .empty {
+    background: $clr-primary-3;
+  }
+  .discount {
+    width: 210px;
+    text-align: center;
+    //border: 2px dashed $clr-primary-2;
+  }
+  .amount-total-text {
+    border-left: 2px dashed $clr-primary-2;
+    border-top: 2px dashed $clr-primary-2;
+    border-bottom: 2px dashed $clr-primary-2;
+  }
+  .amount-total {
+    border-right: 2px dashed $clr-primary-2;
+    border-top: 2px dashed $clr-primary-2;
+    border-bottom: 2px dashed $clr-primary-2;
+  }
+
+  tr {
+    background: $clr-primary-3;
+    &:nth-child(even) {
+      background: $clr-primary-2;
+    }
+  }
+}
+
 //approval and epayment
 .approval-and-payment-title {
   border-left: 4px solid $clr-primary-1;
@@ -96,6 +128,9 @@
     display: flex;
     flex-direction: column;
     flex: 1;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
     label {
       margin-bottom: 10px;
     }
@@ -107,9 +142,6 @@
       outline: none;
       background: $clr-primary-2;
     }
-  }
-  .approval-and-payment-input-content {
-    margin-right: 40px;
   }
 }
 .approval-and-payment-input-signIn {
@@ -152,14 +184,13 @@
   }
 }
 //payment details
-
 .payment-details {
   .payment-details-content {
     margin-top: 20px;
     border: 1px solid $clr-primary-4;
     border-radius: 8px;
     padding: 20px;
-
+    overflow: hidden;
     .payment-details-content-title-wrapper {
       display: flex;
       .payment-details-title-content {
@@ -262,9 +293,15 @@
     .question-and-answers-content-name {
       margin-top: 20px;
       display: flex;
+      align-items: center;
+
       p {
         color: $clr-primary-4;
         margin-right: 10px;
+      }
+      span {
+        color: $clr-primary-6;
+        font-size: small;
       }
     }
   }

@@ -202,6 +202,15 @@
     overflow-x: auto;
     white-space: nowrap;
   }
+  .amount-price {
+    margin-left: 3px;
+  }
+  .qty {
+    width: 45px !important;
+    input[type="checkbox"] {
+      margin-left: 0 !important;
+    }
+  }
 }
 //media 320px
 @media screen and (max-width: 320px) {
@@ -213,7 +222,7 @@
     padding: 6px !important;
   }
   .amount-price {
-    margin-left: 50px;
+    margin-left: 51px;
   }
   .amount {
     width: 65px !important;

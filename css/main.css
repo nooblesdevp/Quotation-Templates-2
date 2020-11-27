@@ -161,6 +161,15 @@
     overflow-x: auto;
     white-space: nowrap;
   }
+  .amount-price {
+    margin-left: 3px;
+  }
+  .qty {
+    width: 45px !important;
+  }
+  .qty input[type="checkbox"] {
+    margin-left: 0 !important;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -172,7 +181,7 @@
     padding: 6px !important;
   }
   .amount-price {
-    margin-left: 50px;
+    margin-left: 51px;
   }
   .amount {
     width: 65px !important;
@@ -238,9 +247,8 @@
 }
 
 .quotation-table-content .qty {
-  width: fit-content;
+  width: 60px;
   text-align: center;
-  display: flex;
   align-items: center;
 }
 

@@ -107,6 +107,7 @@
     th {
       font-size: 13px !important;
     }
+
     td {
       font-size: 13px !important;
       padding: 4px !important;
@@ -115,20 +116,22 @@
     .qty {
       display: flex;
       align-items: center;
-      padding-top: 8px !important;
+      text-align: center;
+      input[type="checkbox"] {
+        margin-left: 6px;
+        // margin-top: 3px;
+      }
     }
-    .qty input[type="checkbox"] {
-      margin-left: 6px;
-    }
+
     .unit,
     .amount {
-      width: 65px !important;
+      width: 55px !important;
     }
   }
   .amount-price {
     .discount,
     .group-total {
-      width: 100px !important;
+      width: 94px !important;
     }
 
     .amount-discount {
@@ -204,6 +207,9 @@
 }
 //media 320px
 @media screen and (max-width: 320px) {
+  td {
+    padding: 8px !important;
+  }
   .amount-price {
     margin-left: 149px;
   }
